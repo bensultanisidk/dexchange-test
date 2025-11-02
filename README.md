@@ -1,81 +1,1 @@
-# ?? DEXCHANGE Ğ Test Technique Front-End
-
-Ce projet est une application web front-end construite pour reproduire fidlement **3 crans principaux** d'un design Figma de DEXCHANGE. L'application est dveloppe avec l'cosystme moderne **Next.js**, **Tailwind CSS** et **TypeScript**.
-
----
-
-## ?? Architecture du Projet
-
-Le code est organis autour de composants rutilisables et suit la structure de l'App Router de Next.js pour une organisation claire :
-
-* **`app/auth/register` & `app/auth/login`**: Points d'entre pour les pages d'authentification.
-* **`app/dashboard`**: Contient la page principale du Tableau de Bord.
-* **`app/table-view`**: Contient la page de la Vue Tableau.
-* **`components/`**: Dossier central pour tous les composants React rutilisables (`Button`, `Card`, `Sidebar`, etc.).
-* **`lib/mockData.ts`**: Fichier contenant les donnes fictives (`mock data`) utilises pour alimenter les tableaux et les cartes.
-
----
-
-## ??? Technologies et Outils
-
-Le projet repose sur la stack technique suivante :
-
-* **Framework**: **Next.js** (avec l'App Router)
-* **Styling**: **Tailwind CSS**
-* **Langage**: **TypeScript**
-* **Ic™nes**: **lucide-react**
-* **Composants**: **shadcn/ui** (pour certains lments de base)
-* **Utilitaires**: **clsx** (pour la gestion des classes conditionnelles)
-
----
-
-## ?? Prrequis
-
-Pour lancer l'application en local, assurez-vous d'avoir install :
-
-* **Node.js** (version 18 ou suprieure recommande)
-* **npm** (ou yarn/pnpm)
-
----
-
-## ?? Comment lancer l'application
-
-Pour dmarrer le projet en local, suivez ces tapes :
-
-### 1. Cloner le Projet
-
-```bash
-git clone [https://github.com/bensultanisidk/dexchange-test.git](https://github.com/bensultanisidk/dexchange-test.git)
-cd dexchange-test
-2. Installer les Dpendances
-npm install
-3. Lancer le Serveur de Dveloppement
-npm run dev
-4. Ouvrir l'Application
-Une fois le serveur lanc, ouvrez votre navigateur et accdez ˆ l'adresse locale :
-* URL :Êhttp://localhost:3000
-
-??? Visualiser les Pages Principales
-Vous pouvez naviguer directement vers les vues suivantes :
-PageAdresse CompltePage Register / Loginhttp://localhost:3000/auth/registerDashboardhttp://localhost:3000/dashboardTable Viewhttp://localhost:3000/table-viewExporter vers Sheets
-(?? Ces liens fonctionnent uniquement en local aprs avoir lanc le serveur.)
-
-?? Tests et Validation
-Les pages ont t valides manuellement en vrifiant les points suivants :
-* ?ÊFidlit au DesignÊ: Reproduction correcte des tableaux et des cartes.
-* ?ÊInteractionsÊ: Vrification des boutons et des formulaires.
-* ?ÊDonnesÊ: Intgrit des donnes mockes affiches dans les composants.
-* ?ÊResponsivitÊ: Support simple sur les tailles d'cran mobile et desktop.
-
-?? Futures Amliorations
-Si plus de temps tait allou ˆ ce projet, les axes d'amlioration prioritaires seraient :
-* ?? Dark / Light Mode Complet: Mise en place d'unÊtoggleÊglobal avec persistance du thme.
-* ?? Dashboard plus Interactif: Ajout d'animations et intgration de graphiques dynamiques.
-* ?? Tests automatiss: Couverture des composants cls avecÊVitestÊetÊReact Testing Library.
-* ??? Amlioration de la Responsivit: Optimisation des tableaux pour les petits crans.
-* ?? Intgration API: Remplacement des donnesÊmockDataÊpar des appels ˆ un back-end rel.
-* Sidebar amliore: Indication de la page active et animations deÊhoverÊplus fluides.
-
-?? Auteur
-Faoid Ben Sultan
-
+ï»¿# ğŸ¨ DEXCHANGE â€“ Test Technique Front-EndCe projet est une application web front-end construite pour reproduire fidÃ¨lement **3 Ã©crans principaux** d'un design Figma de DEXCHANGE. L'application est dÃ©veloppÃ©e avec l'Ã©cosystÃ¨me moderne **Next.js**, **Tailwind CSS** et **TypeScript**.---## ğŸš€ Architecture du ProjetLe code est organisÃ© autour de composants rÃ©utilisables et suit la structure de l'App Router de Next.js pour une organisation claire :* **`app/auth/register` & `app/auth/login`**: Points d'entrÃ©e pour les pages d'authentification.* **`app/dashboard`**: Contient la page principale du Tableau de Bord.* **`app/table-view`**: Contient la page de la Vue Tableau.* **`components/`**: Dossier central pour tous les composants React rÃ©utilisables (`Button`, `Card`, `Sidebar`, etc.).* **`lib/mockData.ts`**: Fichier contenant les donnÃ©es fictives (`mock data`) utilisÃ©es pour alimenter les tableaux et les cartes.---## ğŸ› ï¸ Technologies et OutilsLe projet repose sur la stack technique suivante :* **Framework**: **Next.js** (avec l'App Router)* **Styling**: **Tailwind CSS*** **Langage**: **TypeScript*** **IcÃ´nes**: **lucide-react*** **Composants**: **shadcn/ui** (pour certains Ã©lÃ©ments de base)* **Utilitaires**: **clsx** (pour la gestion des classes conditionnelles)---## âš™ï¸ PrÃ©requisPour lancer l'application en local, assurez-vous d'avoir installÃ© :* **Node.js** (version 18 ou supÃ©rieure recommandÃ©e)* **npm** (ou yarn/pnpm)---## â–¶ï¸ Comment lancer l'applicationPour dÃ©marrer le projet en local, suivez ces Ã©tapes :### 1. Cloner le Projet```bashgit clone [https://github.com/bensultanisidk/dexchange-test.git](https://github.com/bensultanisidk/dexchange-test.git)cd dexchange-test2. Installer les DÃ©pendancesBashnpm install3. Lancer le Serveur de DÃ©veloppementBashnpm run dev4. Ouvrir l'ApplicationUne fois le serveur lancÃ©, ouvrez votre navigateur et accÃ©dez Ã  l'adresse locale :â€¢ URL :Â http://localhost:3000ğŸ–¥ï¸ Visualiser les Pages PrincipalesVous pouvez naviguer directement vers les vues suivantes :PageAdresse ComplÃ¨tePage Register / Loginhttp://localhost:3000/auth/registerDashboardhttp://localhost:3000/dashboardTable Viewhttp://localhost:3000/table-viewExporter vers Sheets(âš ï¸ Ces liens fonctionnent uniquement en local aprÃ¨s avoir lancÃ© le serveur.)ğŸ§ª Tests et ValidationLes pages ont Ã©tÃ© validÃ©es manuellement en vÃ©rifiant les points suivants :â€¢ âœ…Â FidÃ©litÃ© au DesignÂ : Reproduction correcte des tableaux et des cartes.â€¢ âœ…Â InteractionsÂ : VÃ©rification des boutons et des formulaires.â€¢ âœ…Â DonnÃ©esÂ : IntÃ©gritÃ© des donnÃ©es mockÃ©es affichÃ©es dans les composants.â€¢ âœ…Â ResponsivitÃ©Â : Support simple sur les tailles d'Ã©cran mobile et desktop.ğŸ’¡ Futures AmÃ©liorationsSi plus de temps Ã©tait allouÃ© Ã  ce projet, les axes d'amÃ©lioration prioritaires seraient :â€¢ ğŸŒ™ Dark / Light Mode Complet: Mise en place d'unÂ toggleÂ global avec persistance du thÃ¨me.â€¢ ğŸ“Š Dashboard plus Interactif: Ajout d'animations et intÃ©gration de graphiques dynamiques.â€¢ ğŸ§ª Tests automatisÃ©s: Couverture des composants clÃ©s avecÂ VitestÂ etÂ React Testing Library.â€¢ ğŸ–¥ï¸ AmÃ©lioration de la ResponsivitÃ©: Optimisation des tableaux pour les petits Ã©crans.â€¢ ğŸ”— IntÃ©gration API: Remplacement des donnÃ©esÂ mockDataÂ par des appels Ã  un back-end rÃ©el.â€¢ Sidebar amÃ©liorÃ©e: Indication de la page active et animations deÂ hoverÂ plus fluides.
