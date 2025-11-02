@@ -1,104 +1,81 @@
-üé® DEXCHANGE ‚Äì Test Technique Front-End
-Ce projet est une application web front-end construite pour reproduire fid√®lement 3 √©crans principaux d'un design Figma de DEXCHANGE. L'application est d√©velopp√©e avec l'√©cosyst√®me moderne Next.js, Tailwind CSS et TypeScript.
+# ?? DEXCHANGE – Test Technique Front-End
 
-üöÄ Architecture du Projet
-Le code est organis√© autour de composants r√©utilisables et suit la structure de l'App Router de Next.js pour une organisation claire :
+Ce projet est une application web front-end construite pour reproduire fidèlement **3 écrans principaux** d'un design Figma de DEXCHANGE. L'application est développée avec l'écosystème moderne **Next.js**, **Tailwind CSS** et **TypeScript**.
 
-app/auth/register & app/auth/login: Points d'entr√©e pour les pages d'authentification.
+---
 
-app/dashboard: Contient la page principale du Tableau de Bord.
+## ?? Architecture du Projet
 
-app/table-view: Contient la page de la Vue Tableau.
+Le code est organisé autour de composants réutilisables et suit la structure de l'App Router de Next.js pour une organisation claire :
 
-components/: Dossier central pour tous les composants React r√©utilisables (Button, Card, Sidebar, etc.).
+* **`app/auth/register` & `app/auth/login`**: Points d'entrée pour les pages d'authentification.
+* **`app/dashboard`**: Contient la page principale du Tableau de Bord.
+* **`app/table-view`**: Contient la page de la Vue Tableau.
+* **`components/`**: Dossier central pour tous les composants React réutilisables (`Button`, `Card`, `Sidebar`, etc.).
+* **`lib/mockData.ts`**: Fichier contenant les données fictives (`mock data`) utilisées pour alimenter les tableaux et les cartes.
 
-lib/mockData.ts: Fichier contenant les donn√©es fictives (mock data) utilis√©es pour alimenter les tableaux et les cartes.
+---
 
-üõ†Ô∏è Technologies et Outils
+## ??? Technologies et Outils
+
 Le projet repose sur la stack technique suivante :
 
-Framework: Next.js (avec l'App Router)
+* **Framework**: **Next.js** (avec l'App Router)
+* **Styling**: **Tailwind CSS**
+* **Langage**: **TypeScript**
+* **Icônes**: **lucide-react**
+* **Composants**: **shadcn/ui** (pour certains éléments de base)
+* **Utilitaires**: **clsx** (pour la gestion des classes conditionnelles)
 
-Styling: Tailwind CSS
+---
 
-Langage: TypeScript
+## ?? Prérequis
 
-Ic√¥nes: lucide-react
+Pour lancer l'application en local, assurez-vous d'avoir installé :
 
-Composants: shadcn/ui (pour certains √©l√©ments de base)
+* **Node.js** (version 18 ou supérieure recommandée)
+* **npm** (ou yarn/pnpm)
 
-Utilitaires: clsx (pour la gestion des classes conditionnelles)
+---
 
-‚öôÔ∏è Pr√©requis
-Pour lancer l'application en local, assurez-vous d'avoir install√© :
+## ?? Comment lancer l'application
 
-Node.js (version 18 ou sup√©rieure recommand√©e)
+Pour démarrer le projet en local, suivez ces étapes :
 
-npm (ou yarn/pnpm)
+### 1. Cloner le Projet
 
-‚ñ∂Ô∏è Comment lancer l'application
-Pour d√©marrer le projet en local, suivez ces √©tapes :
-
-1. Cloner le Projet
-
-Action : Clonez le d√©p√¥t git.
-
-Commande : git clone https://github.com/bensultanisidk/dexchange-test.git
-
-Ensuite : D√©placez-vous dans le dossier du projet : cd dexchange-test
-
-2. Installer les D√©pendances
-
-Action : Installez les paquets Node.js.
-
-Commande : npm install
-
-3. Lancer le Serveur de D√©veloppement
-
-Action : Lancez le serveur local.
-
-Commande : npm run dev
-
+```bash
+git clone [https://github.com/bensultanisidk/dexchange-test.git](https://github.com/bensultanisidk/dexchange-test.git)
+cd dexchange-test
+2. Installer les Dépendances
+npm install
+3. Lancer le Serveur de Développement
+npm run dev
 4. Ouvrir l'Application
+Une fois le serveur lancé, ouvrez votre navigateur et accédez à l'adresse locale :
+* URL : http://localhost:3000
 
-Une fois le serveur lanc√©, ouvrez votre navigateur et acc√©dez √† l'adresse locale :
-
-URL : http://localhost:3000
-
-üñ•Ô∏è Visualiser les Pages Principales
+??? Visualiser les Pages Principales
 Vous pouvez naviguer directement vers les vues suivantes :
+PageAdresse ComplètePage Register / Loginhttp://localhost:3000/auth/registerDashboardhttp://localhost:3000/dashboardTable Viewhttp://localhost:3000/table-viewExporter vers Sheets
+(?? Ces liens fonctionnent uniquement en local après avoir lancé le serveur.)
 
-Page	Adresse Compl√®te
-Page Register / Login	http://localhost:3000/auth/register
-Dashboard	http://localhost:3000/dashboard
-Table View	http://localhost:3000/table-view
-(‚ö†Ô∏è Ces liens fonctionnent uniquement en local apr√®s avoir lanc√© le serveur.)
+?? Tests et Validation
+Les pages ont été validées manuellement en vérifiant les points suivants :
+* ? Fidélité au Design : Reproduction correcte des tableaux et des cartes.
+* ? Interactions : Vérification des boutons et des formulaires.
+* ? Données : Intégrité des données mockées affichées dans les composants.
+* ? Responsivité : Support simple sur les tailles d'écran mobile et desktop.
 
-üß™ Tests et Validation
-Les pages ont √©t√© valid√©es manuellement en v√©rifiant les points suivants :
+?? Futures Améliorations
+Si plus de temps était alloué à ce projet, les axes d'amélioration prioritaires seraient :
+* ?? Dark / Light Mode Complet: Mise en place d'un toggle global avec persistance du thème.
+* ?? Dashboard plus Interactif: Ajout d'animations et intégration de graphiques dynamiques.
+* ?? Tests automatisés: Couverture des composants clés avec Vitest et React Testing Library.
+* ??? Amélioration de la Responsivité: Optimisation des tableaux pour les petits écrans.
+* ?? Intégration API: Remplacement des données mockData par des appels à un back-end réel.
+* Sidebar améliorée: Indication de la page active et animations de hover plus fluides.
 
-‚úÖ Fid√©lit√© au Design : Reproduction correcte des tableaux et des cartes.
-
-‚úÖ Interactions : V√©rification des boutons et des formulaires.
-
-‚úÖ Donn√©es : Int√©grit√© des donn√©es mock√©es affich√©es dans les composants.
-
-‚úÖ Responsivit√© : Support simple sur les tailles d'√©cran mobile et desktop.
-
-üí° Futures Am√©liorations
-Si plus de temps √©tait allou√© √† ce projet, les axes d'am√©lioration prioritaires seraient :
-
-üåô Dark / Light Mode Complet: Mise en place d'un toggle global avec persistance du th√®me.
-
-üìä Dashboard plus Interactif: Ajout d'animations et int√©gration de graphiques dynamiques.
-
-üß™ Tests automatis√©s: Couverture des composants cl√©s avec Vitest et React Testing Library.
-
-üñ•Ô∏è Am√©lioration de la Responsivit√©: Optimisation des tableaux pour les petits √©crans.
-
-üîó Int√©gration API: Remplacement des donn√©es mockData par des appels √† un back-end r√©el.
-
-Sidebar am√©lior√©e: Indication de la page active et animations de hover plus fluides.
-
-üë§ Auteur
+?? Auteur
 Faoid Ben Sultan
+
