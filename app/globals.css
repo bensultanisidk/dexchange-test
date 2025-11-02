@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* waves animations (global) */
+@keyframes wave1 {
+  0%   { transform: translateX(0);  }
+  50%  { transform: translateX(-40px); }
+  100% { transform: translateX(0);  }
+}
+@keyframes wave2 {
+  0%   { transform: translateX(0);  }
+  50%  { transform: translateX(-60px); }
+  100% { transform: translateX(0);  }
+}
+@keyframes wave3 {
+  0%   { transform: translateX(0);  }
+  50%  { transform: translateX(40px); }
+  100% { transform: translateX(0);  }
+}
+@keyframes wave4 {
+  0%   { transform: translateX(0);  }
+  50%  { transform: translateX(60px); }
+  100% { transform: translateX(0);  }
+}
+
+/* animation utility classes */
+.animate-wave1 { animation: wave1 9s ease-in-out infinite; will-change: transform; }
+.animate-wave2 { animation: wave2 12s ease-in-out infinite; will-change: transform; }
+.animate-wave3 { animation: wave3 10s ease-in-out infinite; will-change: transform; }
+.animate-wave4 { animation: wave4 14s ease-in-out infinite; will-change: transform; }
+
+/* optional: reduce motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-wave1,
+  .animate-wave2,
+  .animate-wave3,
+  .animate-wave4 {
+    animation: none;
+  }
+}
