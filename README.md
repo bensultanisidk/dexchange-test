@@ -1,57 +1,104 @@
-# DEXCHANGE – Test Technique Front-End
+🎨 DEXCHANGE – Test Technique Front-End
+Ce projet est une application web front-end construite pour reproduire fidèlement 3 écrans principaux d'un design Figma de DEXCHANGE. L'application est développée avec l'écosystème moderne Next.js, Tailwind CSS et TypeScript.
 
-**Projet réalisé dans le cadre du test technique DEXCHANGE pour reproduire 3 écrans à partir du design Figma.**
+🚀 Architecture du Projet
+Le code est organisé autour de composants réutilisables et suit la structure de l'App Router de Next.js pour une organisation claire :
 
----
+app/auth/register & app/auth/login: Points d'entrée pour les pages d'authentification.
 
-## 1. Installation & Lancement
+app/dashboard: Contient la page principale du Tableau de Bord.
 
-1. **Cloner le projet**  
-   Ouvrir un terminal et exécuter :  
-   ```bash
-   git clone https://github.com/bensultanisidk/dexchange-test.git
-Installer les dépendances
-npm install
-Lancer le serveur de développement
-npm run dev
-Ouvrir le projet dans le navigateur
-http://localhost:3000
-2. Visualiser les pages
-Une fois le serveur lancé, vous pouvez accéder aux trois pages principales :
-Page Register / Login
-http://localhost:3000/auth/register
-Dashboard
-http://localhost:3000/Dashboard
-Table View
-http://localhost:3000/Table-view
-Remarque : ces liens fonctionnent uniquement en local après avoir lancé le serveur de développement.
-3. Librairies utilisées
-Next.js (App Router)
-Tailwind CSS
-TypeScript
-lucide-react pour les icônes
-shadcn/ui pour certains composants réutilisables
-clsx pour gérer les classes conditionnelles
-Composants réutilisables : Button, Card, Badge, Table, Sidebar, Navbar
-4. Ce que vous feriez avec plus de temps
-Si j’avais plus de temps pour ce projet, voici les améliorations que j’apporterais :
-Dark / Light mode complet
-Ajouter un toggle global pour changer le thème
-Persister le thème choisi dans le local storage
-Sidebar améliorée
-Mettre en surbrillance la page active
-Ajouter des animations douces au hover
-Animations pour les composants
-Boutons, cartes et tableaux animés avec Framer Motion
-Transitions fluides lors du chargement ou des interactions
-Tests unitaires et d’intégration
-Utiliser Vitest et React Testing Library
-Vérifier le rendu des composants et les interactions
-Optimisation de la responsivité et accessibilité
-Adapter l’affichage pour mobile et tablette
-Ajouter des attributs ARIA pour l’accessibilité
-Données dynamiques et API
-Remplacer les mockdata par des appels API réels
-Ajouter gestion des erreurs et états de chargement
-5. Auteur
-Faoid Ben Sultan – GitHub
+app/table-view: Contient la page de la Vue Tableau.
+
+components/: Dossier central pour tous les composants React réutilisables (Button, Card, Sidebar, etc.).
+
+lib/mockData.ts: Fichier contenant les données fictives (mock data) utilisées pour alimenter les tableaux et les cartes.
+
+🛠️ Technologies et Outils
+Le projet repose sur la stack technique suivante :
+
+Framework: Next.js (avec l'App Router)
+
+Styling: Tailwind CSS
+
+Langage: TypeScript
+
+Icônes: lucide-react
+
+Composants: shadcn/ui (pour certains éléments de base)
+
+Utilitaires: clsx (pour la gestion des classes conditionnelles)
+
+⚙️ Prérequis
+Pour lancer l'application en local, assurez-vous d'avoir installé :
+
+Node.js (version 18 ou supérieure recommandée)
+
+npm (ou yarn/pnpm)
+
+▶️ Comment lancer l'application
+Pour démarrer le projet en local, suivez ces étapes :
+
+1. Cloner le Projet
+
+Action : Clonez le dépôt git.
+
+Commande : git clone https://github.com/bensultanisidk/dexchange-test.git
+
+Ensuite : Déplacez-vous dans le dossier du projet : cd dexchange-test
+
+2. Installer les Dépendances
+
+Action : Installez les paquets Node.js.
+
+Commande : npm install
+
+3. Lancer le Serveur de Développement
+
+Action : Lancez le serveur local.
+
+Commande : npm run dev
+
+4. Ouvrir l'Application
+
+Une fois le serveur lancé, ouvrez votre navigateur et accédez à l'adresse locale :
+
+URL : http://localhost:3000
+
+🖥️ Visualiser les Pages Principales
+Vous pouvez naviguer directement vers les vues suivantes :
+
+Page	Adresse Complète
+Page Register / Login	http://localhost:3000/auth/register
+Dashboard	http://localhost:3000/dashboard
+Table View	http://localhost:3000/table-view
+(⚠️ Ces liens fonctionnent uniquement en local après avoir lancé le serveur.)
+
+🧪 Tests et Validation
+Les pages ont été validées manuellement en vérifiant les points suivants :
+
+✅ Fidélité au Design : Reproduction correcte des tableaux et des cartes.
+
+✅ Interactions : Vérification des boutons et des formulaires.
+
+✅ Données : Intégrité des données mockées affichées dans les composants.
+
+✅ Responsivité : Support simple sur les tailles d'écran mobile et desktop.
+
+💡 Futures Améliorations
+Si plus de temps était alloué à ce projet, les axes d'amélioration prioritaires seraient :
+
+🌙 Dark / Light Mode Complet: Mise en place d'un toggle global avec persistance du thème.
+
+📊 Dashboard plus Interactif: Ajout d'animations et intégration de graphiques dynamiques.
+
+🧪 Tests automatisés: Couverture des composants clés avec Vitest et React Testing Library.
+
+🖥️ Amélioration de la Responsivité: Optimisation des tableaux pour les petits écrans.
+
+🔗 Intégration API: Remplacement des données mockData par des appels à un back-end réel.
+
+Sidebar améliorée: Indication de la page active et animations de hover plus fluides.
+
+👤 Auteur
+Faoid Ben Sultan
